@@ -1,0 +1,28 @@
+[mysqld]
+# MySQL Server optimizations
+innodb_buffer_pool_size = 256M
+innodb_log_file_size = 64M
+innodb_flush_log_at_trx_commit = 2
+innodb_flush_method = O_DIRECT
+innodb_file_per_table = 1
+max_allowed_packet = 128M
+key_buffer_size = 64M
+table_open_cache = 1000
+query_cache_type = 1
+query_cache_size = 32M
+query_cache_limit = 2M
+tmp_table_size = 64M
+max_heap_table_size = 64M
+thread_cache_size = 8
+open_files_limit = 16384
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/mysql-slow.log
+long_query_time = 2
+join_buffer_size = 4M
+sort_buffer_size = 4M
+read_buffer_size = 2M
+read_rnd_buffer_size = 1M
+default_storage_engine = InnoDB
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+transaction_isolation = READ-COMMITTED

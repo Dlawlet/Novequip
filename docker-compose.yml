@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:8.0
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mysql-custom.cnf:/etc/mysql/conf.d/custom.cnf
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "wordpress", "-pwordpress"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - wp_network
+
+  wordpress:
+    image: wordpress:latest
+    depends_on:
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - wp_data:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('FS_METHOD', 'direct');
+        define('WP_MEMORY_LIMIT', '768M');
+        define('WP_MAX_MEMORY_LIMIT', '1024M');
+        define('WP_CACHE', true);
+        define('DISABLE_WP_CRON', true);
+        define('EMPTY_TRASH_DAYS', 7);
+        define('WP_POST_REVISIONS', false);
+        define('WP_AUTO_UPDATE_CORE', false);
+        define('AUTOMATIC_UPDATER_DISABLED', true);
+        define('WP_HTTP_BLOCK_EXTERNAL', false);
+        // Redis settings
+        define('WP_REDIS_HOST', 'redis');
+        define('WP_REDIS_PORT', 6379);
+        define('WP_CACHE_KEY_SALT', 'novequip_');
+    networks:
+      - wp_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - database
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: somewordpress
+      UPLOAD_LIMIT: 300M
+    networks:
+      - wp_network
+
+  redis:
+    image: redis:alpine
+    restart: always
+    networks:
+      - wp_network
+
+networks:
+  wp_network:
+
+volumes:
+  db_data:
+  wp_data:
