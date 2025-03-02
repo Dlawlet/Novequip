@@ -21,25 +21,27 @@ services:
       - wp_network
 
   wordpress:
-    image: wordpress:latest
     depends_on:
       database:
         condition: service_healthy
       redis:
         condition: service_started
+    image: wordpress:latest
+    ports:
+      - "8080:80"
+    restart: always
     volumes:
       - wp_data:/var/www/html
       - ./wp-content:/var/www/html/wp-content
-      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
-    ports:
-      - "8000:80"
-    restart: always
+      - ./php.ini:/usr/local/etc/php/conf.d/novequip-custom.ini
     environment:
-      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_HOST: database:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
       WORDPRESS_CONFIG_EXTRA: |
+        define('WP_SITEURL', 'http://localhost:8080');
+        define('WP_HOME', 'http://localhost:8080');
         define('FS_METHOD', 'direct');
         define('WP_MEMORY_LIMIT', '768M');
         define('WP_MAX_MEMORY_LIMIT', '1024M');
@@ -58,15 +60,18 @@ services:
       - wp_network
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
     depends_on:
       - database
+    image: phpmyadmin/phpmyadmin
+    restart: always
     ports:
-      - "8080:80"
+      - '8081:80'
     environment:
       PMA_HOST: database
       MYSQL_ROOT_PASSWORD: somewordpress
       UPLOAD_LIMIT: 300M
+    volumes:
+      - /sessions
     networks:
       - wp_network
 

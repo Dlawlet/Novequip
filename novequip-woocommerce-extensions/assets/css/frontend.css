@@ -1,0 +1,169 @@
+/**
+ * NovEquip WooCommerce Extensions - Frontend Styles
+ */
+
+/* Quick View Button */
+.novequip-quick-view {
+    margin-left: 5px !important;
+    background-color: #f7f7f7 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+.novequip-quick-view:hover {
+    background-color: #ebebeb !important;
+    color: #000 !important;
+}
+
+/* Technical Specifications Tab */
+.novequip-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.novequip-specs-table th,
+.novequip-specs-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.novequip-specs-table th {
+    width: 35%;
+    font-weight: 600;
+    background-color: #f9f9f9;
+}
+
+/* Quality Guarantee Box */
+.novequip-guarantee-box {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 3px;
+}
+
+.novequip-guarantee-box h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Cart Notice */
+.novequip-cart-notice {
+    padding: 12px 15px;
+    background-color: #fff8e5;
+    border-left: 4px solid #ffb900;
+    margin-bottom: 20px;
+}
+
+.novequip-cart-notice p {
+    margin: 0 !important;
+    color: #6d6d6d;
+}
+
+.novequip-cart-notice-success {
+    background-color: #ecf7ed;
+    border-left-color: #4CAF50;
+}
+
+/* Free Shipping Progress Bar */
+.novequip-shipping-progress {
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.novequip-shipping-progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+.novequip-shipping-progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Product Grid Enhancements */
+.woocommerce ul.products li.product {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Product badges */
+.novequip-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0 0 0 5px;
+}
+
+.novequip-badge.novequip-badge-new {
+    background-color: #2196F3;
+}
+
+.novequip-badge.novequip-badge-sale {
+    background-color: #F44336;
+}
+
+/* Quick view modal */
+.novequip-quick-view-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.novequip-quick-view-content {
+    position: relative;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.novequip-quick-view-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+}
+
+.novequip-quick-view-close:hover {
+    color: #000;
+}
