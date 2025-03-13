@@ -3,7 +3,7 @@ woocommerce/logs/
 woocommerce/cache/
 woocommerce/tmp/
 woocommerce-webhooks.log
-wp-content/uploads/woocommerce_uploads/
+#wp-content/uploads/woocommerce_uploads/
 
 # WordPress specific files
 wp-content/advanced-cache.php
@@ -11,10 +11,10 @@ wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
+#wp-content/upgrade/
+#wp-content/uploads/
 wp-content/mu-plugins/
-wp-content/wp-cache-config.php
+#wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 wp-content/db.php
 
