@@ -1,0 +1,63 @@
+    Country code,State code,ZIP/Postcode,City,Rate %,Tax name,Priority,Compound,Shipping,Tax class
+US,AL,*,*,4,Alabama Sales Tax,1,0,1,
+US,AK,*,*,0,Alaska Sales Tax,1,0,1,
+US,AZ,*,*,5.6,Arizona Sales Tax,1,0,1,
+US,AR,*,*,6.5,Arkansas Sales Tax,1,0,1,
+US,CA,*,*,7.25,California Sales Tax,1,0,1,
+US,CO,*,*,2.9,Colorado Sales Tax,1,0,1,
+US,CT,*,*,6.35,Connecticut Sales Tax,1,0,1,
+US,DE,*,*,0,Delaware Sales Tax,1,0,1,
+US,FL,*,*,6,Florida Sales Tax,1,0,1,
+US,GA,*,*,4,Georgia Sales Tax,1,0,1,
+US,HI,*,*,4,Hawaii Sales Tax,1,0,1,
+US,CA,*,*,0,California Medical Equipment,1,0,1,medical
+US,NY,*,*,0,New York Medical Equipment,1,0,1,medical
+US,TX,*,*,0,Texas Medical Equipment,1,0,1,medical
+US,FL,*,*,0,Florida Medical Equipment,1,0,1,medical
+GB,*,*,*,20,UK VAT,1,0,1,
+GB,*,*,*,0,UK VAT Medical,1,0,1,medical
+FR,*,*,*,20,France VAT,1,0,1,
+FR,*,*,*,5.5,France VAT Medical,1,0,1,medical
+DE,*,*,*,19,Germany VAT,1,0,1,
+DE,*,*,*,7,Germany VAT Medical,1,0,1,medical
+IT,*,*,*,22,Italy VAT,1,0,1,
+IT,*,*,*,4,Italy VAT Medical,1,0,1,medical
+ES,*,*,*,21,Spain VAT,1,0,1,
+ES,*,*,*,10,Spain VAT Medical,1,0,1,medical
+CA,*,*,*,5,Canada GST,1,0,1,
+CA,ON,*,*,8,Ontario HST,2,0,1,
+CA,BC,*,*,7,British Columbia PST,2,0,1,
+CA,AB,*,*,0,Alberta PST,2,0,1,
+CA,QC,*,*,9.975,Quebec QST,2,1,1,
+CA,*,*,*,0,Canada Medical GST,1,0,1,medical
+AU,*,*,*,10,Australia GST,1,0,1,
+AU,*,*,*,0,Australia Medical GST,1,0,1,medical
+NZ,*,*,*,15,New Zealand GST,1,0,1,
+ZA,*,*,*,15,South Africa VAT,1,0,1,
+NG,*,*,*,7.5,Nigeria VAT,1,0,1,
+NG,*,*,*,0,Nigeria Medical VAT,1,0,1,medical
+KE,*,*,*,16,Kenya VAT,1,0,1,
+GH,*,*,*,12.5,Ghana VAT,1,0,1,
+AE,*,*,*,5,UAE VAT,1,0,1,
+AE,*,*,*,0,UAE Medical VAT,1,0,1,medical
+SA,*,*,*,15,Saudi Arabia VAT,1,0,1,
+SA,*,*,*,0,Saudi Arabia Medical VAT,1,0,1,medical
+EG,*,*,*,14,Egypt VAT,1,0,1,
+MA,*,*,*,20,Morocco VAT,1,0,1,
+MA,*,*,*,0,Morocco Medical VAT,1,0,1,medical
+SG,*,*,*,7,Singapore GST,1,0,1,
+JP,*,*,*,10,Japan Consumption Tax,1,0,1,
+JP,*,*,*,8,Japan Medical Consumption Tax,1,0,1,medical
+KR,*,*,*,10,South Korea VAT,1,0,1,
+KR,*,*,*,0,South Korea Medical VAT,1,0,1,medical
+IN,*,*,*,18,India GST,1,0,1,
+IN,*,*,*,5,India Medical GST,1,0,1,medical
+BR,*,*,*,17,Brazil ICMS,1,0,1,
+MX,*,*,*,16,Mexico VAT,1,0,1,
+MX,*,*,*,0,Mexico Medical VAT,1,0,1,medical
+CL,*,*,*,19,Chile VAT,1,0,1,
+CO,*,*,*,19,Colombia VAT,1,0,1,
+CO,*,*,*,5,Colombia Medical VAT,1,0,1,medical
+PE,*,*,*,18,Peru VAT,1,0,1,
+AR,*,*,*,21,Argentina VAT,1,0,1,
+AR,*,*,*,10.5,Argentina Medical VAT,1,0,1,medical

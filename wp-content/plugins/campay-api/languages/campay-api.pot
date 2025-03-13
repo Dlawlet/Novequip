@@ -1,0 +1,173 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Campay Woocommerce Payment Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-16 19:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.1\n"
+"X-Domain: campay-api"
+
+#: campay-api.php:110
+msgid ""
+"\n"
+"Order will timeout after 2 minutes"
+msgstr ""
+
+#: campay-api.php:205
+msgid "9 digits phone number accepted"
+msgstr ""
+
+#. Description of the plugin
+msgid "Accept Mobile Money Payment using CamPay API Services."
+msgstr ""
+
+#: campay-api.php:142
+msgid "Allow gateway to convert EURO to XAF before payment"
+msgstr ""
+
+#: campay-api.php:134
+msgid "Allow gateway to convert USD to XAF before payment"
+msgstr ""
+
+#: campay-api.php:126
+msgid "Allow gateway to process Credit Card on checkout"
+msgstr ""
+
+#: campay-api.php:161
+msgid "App Password"
+msgstr ""
+
+#: campay-api.php:157
+msgid "App Username"
+msgstr ""
+
+#. Author of the plugin
+msgid "CamPay"
+msgstr ""
+
+#. Name of the plugin
+msgid "Campay Woocommerce Payment Gateway"
+msgstr ""
+
+#: campay-api.php:223
+msgid "Click here to pay using a credit or debit card"
+msgstr ""
+
+#: campay-api.php:124
+msgid "Enable Credit Card processing for payment"
+msgstr ""
+
+#: campay-api.php:140
+msgid "Enable EURO to XAF conversion"
+msgstr ""
+
+#: campay-api.php:116
+msgid "Enable Test Mode"
+msgstr ""
+
+#: campay-api.php:132
+msgid "Enable USD to XAF conversion"
+msgstr ""
+
+#: campay-api.php:204
+msgid "Enter a valid MTN or ORANGE Money number"
+msgstr ""
+
+#: campay-api.php:152
+msgid "EURO to XAF conversion rate"
+msgstr ""
+
+#: campay-api.php:440 campay-api.php:599 campay-api.php:627 campay-api.php:676
+msgid "Failed to initiate transaction please try again later"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://campay.net/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://campay.net/wordpress/campay-payment-gateway/"
+msgstr ""
+
+#: campay-api.php:624 campay-api.php:671
+msgid "Invalid Transaction Reference"
+msgstr ""
+
+#: campay-api.php:221
+msgid "PAY WITH DEBIT OR CREDIT CARD"
+msgstr ""
+
+#: campay-api.php:195
+msgid "PAY WITH MOMO OR OM"
+msgstr ""
+
+#: campay-api.php:432
+msgid "Payment failed! Payment was declined by payer or insuficient funds"
+msgstr ""
+
+#: campay-api.php:427 campay-api.php:433 campay-api.php:489 campay-api.php:502
+msgid "Payment not received received"
+msgstr ""
+
+#: campay-api.php:690
+msgid "PAYMENT PROCESSING"
+msgstr ""
+
+#: campay-api.php:401
+msgid "Payment received"
+msgstr ""
+
+#: campay-api.php:118
+msgid "Place the payment gateway in test mode using test server."
+msgstr ""
+
+#: campay-api.php:271
+msgid "Please enter a number to proceed the transaction"
+msgstr ""
+
+#: campay-api.php:123
+msgid "Support of Credit Card"
+msgstr ""
+
+#: campay-api.php:139
+msgid "Support of EURO"
+msgstr ""
+
+#: campay-api.php:131
+msgid "Support of USD"
+msgstr ""
+
+#: campay-api.php:115
+msgid "Test mode"
+msgstr ""
+
+#: campay-api.php:279
+msgid "The mobile number entered for the transaction is not valid!"
+msgstr ""
+
+#: campay-api.php:202
+msgid "The number entered is not a valid MTN or ORANGE number"
+msgstr ""
+
+#: campay-api.php:501
+msgid "The payment time out. Failed to proceed your order"
+msgstr ""
+
+#: campay-api.php:147
+msgid "USD to XAF conversion rate"
+msgstr ""
+
+#: campay-api.php:692
+msgid ""
+"We are waiting for your payment. Please dial *126# for MTN and #150*50# for "
+"Orange."
+msgstr ""

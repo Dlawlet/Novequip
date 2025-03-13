@@ -1,0 +1,104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Campay Woocommerce Payment Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-16 18:38+0000\n"
+"PO-Revision-Date: 2023-11-16 18:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (UK)\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.1\n"
+"X-Domain: campay-api"
+
+#: campay-api.php:204
+msgid "9 digits phone number accepted"
+msgstr "9 digits phone number accepted"
+
+#. Description of the plugin
+msgid "Accept Mobile Money Payment using CamPay API Services."
+msgstr "Accept Mobile Money Payment using CamPay API Services."
+
+#. Author of the plugin
+msgid "CamPay"
+msgstr "CamPay"
+
+#. Name of the plugin
+msgid "Campay Woocommerce Payment Gateway"
+msgstr "Campay Woocommerce Payment Gateway"
+
+#: campay-api.php:222
+msgid "Click here to pay using a credit or debit card"
+msgstr "Click here to pay using a credit or debit card"
+
+#: campay-api.php:203
+msgid "Enter a valid MTN or ORANGE Money number"
+msgstr "Enter a valid MTN or ORANGE Money number"
+
+#: campay-api.php:439 campay-api.php:598 campay-api.php:626 campay-api.php:675
+msgid "Failed to initiate transaction please try again later"
+msgstr "Failed to initiate transaction please try again later"
+
+#. Author URI of the plugin
+msgid "https://campay.net/"
+msgstr "https://campay.net/"
+
+#. URI of the plugin
+msgid "https://campay.net/wordpress/campay-payment-gateway/"
+msgstr "https://campay.net/wordpress/campay-payment-gateway/"
+
+#: campay-api.php:623 campay-api.php:670
+msgid "Invalid Transaction Reference"
+msgstr "Invalid Transaction Reference"
+
+#: campay-api.php:194
+msgid "PAY WITH MOMO OR OM"
+msgstr "PAY WITH MOMO OR OM"
+
+#: campay-api.php:220
+msgid "PAY WITH DEBIT OR CREDIT CARD"
+msgstr "PAY WITH CREDIT OR DEBIT CARD"
+
+#: campay-api.php:431
+msgid "Payment failed! Payment was declined by payer or insuficient funds"
+msgstr "Payment failed! Payment was declined by payer or insuficient funds"
+
+#: campay-api.php:426 campay-api.php:432 campay-api.php:488 campay-api.php:501
+msgid "Payment not received received"
+msgstr "Payment not received received"
+
+#: campay-api.php:689
+msgid "PAYMENT PROCESSING"
+msgstr "PAYMENT PROCESSING"
+
+#: campay-api.php:400
+msgid "Payment received"
+msgstr "Payment received"
+
+#: campay-api.php:270
+msgid "Please enter a number to proceed the transaction"
+msgstr "Please enter a number to proceed the transaction"
+
+#: campay-api.php:278
+msgid "The mobile number entered for the transaction is not valid!"
+msgstr "The mobile number entered for the transaction is not valid!"
+
+#: campay-api.php:201
+msgid "The number entered is not a valid MTN or ORANGE number"
+msgstr "The number entered is not a valid MTN or ORANGE number"
+
+#: campay-api.php:500
+msgid "The payment time out. Failed to proceed your order"
+msgstr "The payment time out. Failed to proceed your order"
+
+#: campay-api.php:691
+msgid ""
+"We are waiting for your payment. Please dial *126# for MTN and #150*50# for "
+"Orange."
+msgstr ""
+"We are waiting for your payment. Please dial *126# for MTN and #150*50# for "
+"Orange."
